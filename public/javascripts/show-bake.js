@@ -40,7 +40,6 @@ function initShowBakePage(eventSourceUrl, initialHighestLogNumber) {
           var html = "<div class=\"bake-log\">[" + msg.timestamp + "] " + msg.log.messageHtml + "</div>";
           packerOutputDiv.innerHTML += html;
           highestLogNumber = msg.log.number;
-          scrollToBottom();
         }
         break;
       case "ami-created":
@@ -56,8 +55,3 @@ function initShowBakePage(eventSourceUrl, initialHighestLogNumber) {
   };
   feed.addEventListener('message', handler, false);
 }
-
-$(function() {
-  initPackerOutputComponent();
-  scrollToBottom();
-});

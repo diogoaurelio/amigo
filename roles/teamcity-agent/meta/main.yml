@@ -1,0 +1,13 @@
+---
+dependencies:
+  - role: packages
+    packages: 
+      - docker
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+    signing-keys: ['https://download.docker.com/linux/ubuntu/gpg']
+    repositories: {docker: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable'}
+  - role: pip-packages 
+    packages: [boto3, botocore]
