@@ -1,8 +1,9 @@
 ---
 dependencies:
+  - role: docker
+    version: 18.03.1
   - role: packages
     packages: 
-      - docker
       - apt-transport-https
       - ca-certificates
       - curl
