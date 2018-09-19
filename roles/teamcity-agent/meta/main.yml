@@ -1,7 +1,7 @@
 ---
 dependencies:
   - role: docker
-    version: 18.03.1
+    version: 18.03.1~ce-0
   - role: packages
     packages: 
       - apt-transport-https
